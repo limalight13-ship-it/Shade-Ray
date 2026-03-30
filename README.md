@@ -1,6 +1,5 @@
 # Shade-Ray
-[![MCPize](https://mcpize.com/badge/@limalight13/shade-ray)](https://mcpize.com/mcp/shade-ray)
-
+[![MCPize](https://mcpize.com/badge/@limalight13/shade-ray-2)](https://mcpize.com/mcp/shade-ray-2)
 The solution you need
 
 ## Connect via MCPize
@@ -8,7 +7,7 @@ The solution you need
 Use this MCP server instantly with no local installation:
 
 ```bash
-npx -y mcpize connect @limalight13/shade-ray --client claude
+npx -y mcpize connect @limalight13/shade-ray-2 --client claude
 ```
 
-Or connect at: **https://mcpize.com/mcp/shade-ray**
+Or connect at: **https://mcpize.com/mcp/shade-ray-2**
