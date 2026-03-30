@@ -4,7 +4,7 @@
 version: 1
 
 name: "Shade Ray"
-slug: "shade-ray"
+slug: "shade-ray-2"
 
 runtime: typescript
 entry: "dist/index.js"
