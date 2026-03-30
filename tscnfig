@@ -1,0 +1,12 @@
+**Root Cause**: Repository contains only README.md—no `package.json`, TypeScript source files (`src/` or `index.ts`), `tsconfig.json`, or build output (`dist/index.js`). Generated Dockerfile fails at `npm install` (no `package.json`) and `npm run build` (no scripts/source).
+
+**Classification**: `developer_fix`
+
+**Recommended Fix**:
+1. Initialize a Node.js/TypeScript project: Run `npm init -y`, add `"scripts": {"build": "tsc"}`, `"type": "module"` (if ESM), and runtime deps (e.g., `npm i express` for HTTP server).
+2. Add `tsconfig.json` (e.g., `"outDir": "dist", "module": "ESNext"`).
+3. Create `src/index.ts` with HTTP server listening on `process.env.PORT || 8080` (e.g., Express app with `/mcp` and `/ping` endpoints).
+4. Commit/push all files to `main` branch.
+5. Redeploy via MCPize dashboard.
+
+**Affected Files**: All—repo needs full project structure (`package.json`, `tsconfig.json`, `src/index.ts`). Test locally: `npm install && npm run build && node dist/index.js`.
